@@ -1,0 +1,44 @@
+                                                    precision    recall  f1-score   support
+
+                                Apple___Apple_scab     0.7921    0.6349    0.7048       126
+                                 Apple___Black_rot     0.7547    0.9600    0.8451       125
+                          Apple___Cedar_apple_rust     0.7031    0.8182    0.7563        55
+                                   Apple___healthy     0.8726    0.6869    0.7687       329
+                               Blueberry___healthy     0.9045    0.9435    0.9236       301
+          Cherry_(including_sour)___Powdery_mildew     0.8065    0.8294    0.8178       211
+                 Cherry_(including_sour)___healthy     0.8944    0.9415    0.9174       171
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot     0.5434    0.9126    0.6812       103
+                       Corn_(maize)___Common_rust_     1.0000    0.9916    0.9958       239
+               Corn_(maize)___Northern_Leaf_Blight     0.9453    0.6142    0.7446       197
+                            Corn_(maize)___healthy     1.0000    0.9914    0.9957       233
+                                 Grape___Black_rot     0.4957    0.4831    0.4893       236
+                      Grape___Esca_(Black_Measles)     0.6849    0.9495    0.7958       277
+        Grape___Leaf_blight_(Isariopsis_Leaf_Spot)     0.8147    0.8750    0.8438       216
+                                   Grape___healthy     0.7797    0.5412    0.6389        85
+          Orange___Haunglongbing_(Citrus_greening)     0.9907    0.8711    0.9271      1102
+                            Peach___Bacterial_spot     0.9288    0.6239    0.7464       460
+                                   Peach___healthy     0.8077    0.8750    0.8400        72
+                     Pepper,_bell___Bacterial_spot     0.5241    0.8150    0.6380       200
+                            Pepper,_bell___healthy     0.7466    0.9155    0.8225       296
+                             Potato___Early_blight     0.8967    0.9550    0.9249       200
+                              Potato___Late_blight     0.6769    0.6600    0.6684       200
+                                  Potato___healthy     0.1986    0.9355    0.3277        31
+                               Raspberry___healthy     0.3411    0.9733    0.5052        75
+                                 Soybean___healthy     0.9535    0.8055    0.8733      1018
+                           Squash___Powdery_mildew     0.9707    0.9019    0.9350       367
+                          Strawberry___Leaf_scorch     0.8776    0.9685    0.9208       222
+                              Strawberry___healthy     0.8021    0.8370    0.8191        92
+                           Tomato___Bacterial_spot     0.8651    0.6174    0.7205       426
+                             Tomato___Early_blight     0.5288    0.7800    0.6303       200
+                              Tomato___Late_blight     0.7629    0.6990    0.7295       382
+                                Tomato___Leaf_Mold     0.7884    0.7801    0.7842       191
+                       Tomato___Septoria_leaf_spot     0.7081    0.7859    0.7450       355
+     Tomato___Spider_mites Two-spotted_spider_mite     0.7678    0.7381    0.7527       336
+                              Tomato___Target_Spot     0.6568    0.8648    0.7465       281
+            Tomato___Tomato_Yellow_Leaf_Curl_Virus     0.9349    0.8433    0.8867      1072
+                      Tomato___Tomato_mosaic_virus     0.6907    0.8933    0.7791        75
+                                  Tomato___healthy     0.9821    0.8589    0.9164       319
+
+                                          accuracy                         0.8135     10876
+                                         macro avg     0.7735    0.8203    0.7778     10876
+                                      weighted avg     0.8460    0.8135    0.8202     10876
