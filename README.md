@@ -1,57 +1,66 @@
 # 🌿 Plant Disease Detection Using CNN
 
-A deep learning-based plant disease detection system that classifies plant leaf images into 38 different plant disease and healthy-leaf categories using a Convolutional Neural Network (CNN).
+An AI-powered web application that detects plant leaf diseases from images using a **Convolutional Neural Network (CNN)** trained from scratch.
 
-The trained model is deployed using Streamlit, allowing users to upload a plant leaf image and receive the top 3 predicted classes along with their confidence scores.
+The model is trained on the **PlantVillage dataset** and can classify plant leaves into **38 different disease/healthy classes**.
 
----
+## 🚀 Live Demo
 
-## 🚀 Features
+👉 [🌿 Plant Disease Detection – Live App](https://plant-disease-detection-dappua69fenfnuj4l97gn3m.streamlit.app/)
 
-- 🌱 Classifies plant leaf images into 38 classes
-- 🧠 CNN model trained from scratch using TensorFlow/Keras
-- 📊 Achieved 81.35% validation accuracy
-- 🔍 Displays Top-3 predictions
-- 📈 Shows confidence percentages
-- 📷 Upload images directly through the web application
-- 💻 Interactive Streamlit interface
-- 🖼️ Supports JPG, JPEG and PNG images
+## 📌 Project Overview
 
----
+Plant diseases can significantly affect crop production and quality. Early detection can help identify diseases before they spread and cause major damage.
+
+This project uses **Deep Learning and Computer Vision** to automatically analyze a plant leaf image and predict its disease class.
+
+The trained CNN model is integrated into a **Streamlit web application**, allowing users to upload a leaf image and receive a prediction with confidence scores.
+
+## ✨ Features
+
+- 🌿 Plant leaf disease classification
+- 🧠 CNN model trained from scratch
+- 📚 38 disease and healthy classes
+- 📊 81.35% validation accuracy
+- 🔍 Top-3 prediction results
+- 📈 Confidence scores
+- 🖼️ Image upload through web interface
+- 🌐 Live Streamlit deployment
+- 💻 Simple and user-friendly interface
 
 ## 🛠️ Technologies Used
 
+### Programming
 - Python
+
+### Machine Learning / Deep Learning
 - TensorFlow
 - Keras
+- Convolutional Neural Network (CNN)
+
+### Data Processing
 - NumPy
 - Pillow
-- Streamlit
-- Matplotlib
-- Scikit-learn
 
----
+### Web Application
+- Streamlit
+
+### Development Tools
+- VS Code
+- Git
+- GitHub
 
 ## 📂 Dataset
 
-This project uses the PlantVillage dataset.
+The project uses the **PlantVillage dataset** for training and validation.
 
-The dataset contains images of healthy and diseased plant leaves covering 38 classes.
+The dataset contains images belonging to **38 plant disease and healthy classes**.
 
-The dataset was divided into:
-
-- 80% Training data
-- 20% Validation data
-
-The validation split was performed separately for each class to ensure that all 38 classes were represented in both training and validation sets.
-
----
+The dataset is not included in this repository because of its large size.
 
 ## 🧠 Model Architecture
 
-The project uses a Convolutional Neural Network (CNN) trained from scratch.
-
-### Model Pipeline
+The CNN model was trained from scratch using the following architecture:
 
 ```text
 Input Image (96 × 96 × 3)
@@ -60,16 +69,24 @@ Data Augmentation
         ↓
 Rescaling
         ↓
-Convolution + Max Pooling
+Conv2D (32 filters)
         ↓
-Convolution + Max Pooling
+MaxPooling
         ↓
-Convolution + Max Pooling
+Conv2D (64 filters)
+        ↓
+MaxPooling
+        ↓
+Conv2D (128 filters)
+        ↓
+MaxPooling
         ↓
 Global Average Pooling
         ↓
-Dense Layer
+Dense (128)
         ↓
-Dropout
+Dropout (0.4)
         ↓
-38-Class Softmax Output
+Softmax Output
+        ↓
+38 Classes

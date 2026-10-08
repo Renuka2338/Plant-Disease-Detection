@@ -24,3 +24,4 @@ dataset/
 
 checkpoint/
 checkpoints/
+deploy_venv/
