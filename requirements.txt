@@ -1,0 +1,7 @@
+tensorflow==2.22.0rc0
+numpy
+pillow
+streamlit==1.65.0
+scikit-learn
+matplotlib
+opencv-python-headless
